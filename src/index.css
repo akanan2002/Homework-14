@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-image: url('https://i.pinimg.com/564x/ea/a1/1c/eaa11c58e338f1170f1e0f8fc0d71e0d.jpg'); /* Light red background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.todo-app {
+  background: #B0E0E6; /* Light blue background */
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+}
+
+.dashboard {
+  background-color: #5CB3FF; /* Sky blue background */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px; /* Padding on the sides */
+  border-bottom: 2px solid #4682b4; /* Darker border at the bottom */
+}
+
+.form-add-todo,
+.todo-edit-form {
+  background-color: #82CAFF; /* Gold background */
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.form-add-todo > input,
+.todo-edit-form > [type=text] {
+  flex-grow: 1;
+  font-size: large;
+  padding: 8px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.form-add-todo > button {
+  flex-grow: 0;
+  padding: 8px;
+  background-color: #4caf50; /* Green button background */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.todo-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  background-color: #F0FFFF; /* Aqua background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.todo-item p {
+  width: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-item .btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-item .btn-group a {
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 6px 12px;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  background-color: #4caf50;
+}
+
+/* .todo-item .btn-group a {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+} */
+
+.todo-item .btn-group a.edit-button {
+  background-color: #4caf50; /* Green color for Edit button */
+}
+
+.todo-item .btn-group a.delete-button {
+  background-color: #ff0000; /* Red color for Delete button */
+  color: #fff; /* White text color for Delete button */
+}
+
+
+.job-done {
+  /* text-decoration: line-through; */
+  color: red; /* Silver color */
+}
